@@ -1,21 +1,65 @@
 /*ARQUIVO QUE SERÁ IMPORTADO GLOBALMENTE PARA REDUZIR REPETIÇÃO DE CÓDIGO*/
 
-*{
-    margin:0;
-    padding:0;
+/* Importa fontes do google */
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+/*Zera margens e paddings de tudo*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/*Define as cores do site*/
+/*Define variáveis para o site*/
 
-:root{
-    --cor-primaria: blue;
-    --cor-secundaria: brown;
-    --cor-terciaria: red;
-    --cor-fundo: purple;
-    --cor-datalhes: pink;
+:root {
+  --cor-primaria: #219ebc;
+  --cor-secundaria: #582f0e;
+  --cor-preto: #000000;
+  --cor-branco: #f5f5f5;
+
+  --fonte-primaria: "Share Tech Mono", monospace;
+  --fonte-secundaria: Arial, Helvetica, sans-serif;
+}
+
+/*Estiliza o fundo do Body*/
+body {
+  background-color: var(--cor-branco);
 }
 
 /* Define o estilo do cabeçalho, que aparecerá em todas as páginas */
-#header-container{
-    
+#header-container {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--cor-branco);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.336);
 }
+#header-container img{
+  height:50px;
+  }
+
+#header-container div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+#header-container div ul li {
+  list-style: none;
+}
+#header-container div ul li a {
+  color: var(--cor-preto);
+  text-decoration: none;
+  font-family: var(--fonte-primaria);
+  font-size: 25px;
+}
+#header-container div ul li a:hover {
+    color: var(--cor-preto);
+    text-decoration: underline;
+    font-family: var(--fonte-primaria);
+    font-size: 28px;
+  }
