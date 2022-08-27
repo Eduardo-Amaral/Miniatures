@@ -1,1 +1,99 @@
 @import url(global.css);
+
+/* Primeira sessão da HOME */
+main {
+  padding-top: 100px;
+  background-image: url(../assets/images/homeWallpaper.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 800px;
+}
+
+.circle-div-right {
+  background-color: var(--cor-branco);
+  height: 800px;
+  width: 750px;
+  border-radius: 1000px 0px 0px 1000px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product-card {
+  background-color: white;
+  border: 3px solid var(--cor-primaria);
+  border-radius: 50px;
+  padding: 25px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-card h3 {
+  font-family: var(--fonte-primaria);
+  font-size: 25px;
+}
+.product-card img {
+  width: 250px;
+}
+
+/* Segunda sessão da HOME */
+#benefits {
+  z-index: 10000;
+  box-shadow: 0px -75px 25px black;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  background-image: url(../assets/images/batmanWallpaper2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 900px;
+}
+#benefits div {
+  background-color: var(--cor-branco);
+  height: 800px;
+  width: 750px;
+  border-radius: 0px 1000px 1000px 0px;
+  position: absolute;
+  left: 0;
+  top: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#benefits h2 {
+  font-size: 70px;
+}
+#benefits ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#benefits ul li {
+  color: var(--cor-preto);
+  font-size: 25px;
+}
+/* Terceira sessão da HOME */
+#video-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#video-container h2 {
+  font-size: 40px;
+}
