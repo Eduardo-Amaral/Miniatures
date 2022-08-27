@@ -1,0 +1,21 @@
+/*ARQUIVO QUE SERÁ IMPORTADO GLOBALMENTE PARA REDUZIR REPETIÇÃO DE CÓDIGO*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Define as cores do site*/
+
+:root{
+    --cor-primaria: blue;
+    --cor-secundaria: brown;
+    --cor-terciaria: red;
+    --cor-fundo: purple;
+    --cor-datalhes: pink;
+}
+
+/* Define o estilo do cabeçalho, que aparecerá em todas as páginas */
+#header-container{
+    
+}
