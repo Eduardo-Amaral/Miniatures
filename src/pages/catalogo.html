@@ -8,8 +8,14 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Cabeçalho de navegação -->
-    <header id="header-container">
+     <!-- Cabeçalho de navegação -->
+     <header id="header-container">
+      <div>
+        <label class="switcher">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
       <img src="../assets/images/logo.png" alt="logo" />
       <div>
         <ul>
@@ -98,18 +104,14 @@
     <!-- Rodapé do site -->
     <footer>
       <div>
-        <img src="../assets/images/htmlIcon.svg" alt="" />
-        <img src="../assets/images/cssIcon.svg" alt="" />
-        <img src="../assets/images/javascriptIcon.svg" alt="" />
+        <span> HTML + CSS + Javascript</span>
       </div>
       <div>
-        <span
-          >Feito por
-          <a target="_blank" href="https://github.com/Eduardo-Amaral"
-            ><strong style="color: white">Eduardo Amaral</strong>
-            <img src="../assets/images/github.svg" alt="" /></a
-        ></span>
+        <span>Feito por <a target="_blank" href="https://github.com/Eduardo-Amaral"><strong>Eduardo Amaral</strong> <img src="../assets/images/github.svg" alt=""></a></span>
       </div>
     </footer>
+    <!-- importa os scripts -->
+    <script src="../javascript/global.js" ></script>
+    <script src="../javascript/catalogo.js" ></script>
   </body>
 </html>

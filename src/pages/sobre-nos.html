@@ -1,67 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/sobre-nos.css">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/sobre-nos.css" />
     <title>Document</title>
-</head>
-<body>
-   <!-- Cabeçalho de navegação -->
-   <header id="header-container">
-    <img src="../assets/images/logo.png" alt="logo">
-    <div>
-      <ul>
-        <li><a href="/src/pages/index.html">Início</a></li>
-        <li><a href="/src/pages/catalogo.html">Catálogo</a></li>
-        <li><a href="/src/pages/fretes.html">Fretes</a></li>
-        <li><a href="/src/pages/sobre-nos.html">Quem somos</a></li>
-      </ul>
-    </div>
-  </header>
-  <section id="resumo-section">
-    <img src="../assets/images/logo.png" alt="logo miniatures">
-    <pre>
+  </head>
+  <body>
+     <!-- Cabeçalho de navegação -->
+     <header id="header-container">
+      <div>
+        <label class="switcher">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <img src="../assets/images/logo.png" alt="logo" />
+      <div>
+        <ul>
+          <li><a href="/src/pages/index.html">Início</a></li>
+          <li><a href="/src/pages/catalogo.html">Catálogo</a></li>
+          <li><a href="/src/pages/fretes.html">Fretes</a></li>
+          <li><a href="/src/pages/sobre-nos.html">Quem somos</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Sessão de resumo da Miniatures -->
+    <section id="resumo-section">
+      <img src="../assets/images/logo.png" alt="logo miniatures" />
+      <pre>
       Miniatures é uma empresa fictícia do ramo "comércio eletrônico de action figures".
       Feito por Eduardo Amaral, esse projeto tem cunho acadêmico e possui sua estrutura de acordo com os <a style="color:var(--cor-primaria)" href="../../Requisitos.pdf">requisítos</a> impostos pelo professor.
     </pre>
-  </section>
-  <section id="fale-conosco-section">
-    <h2>Fale Conosco</h2>
-    <form action="evento6">
-      <input required placeholder="Nome" type="text">
-      <input required placeholder="Número de Telefone" type="phone">
-      <input required placeholder="Email" type="email">
-      <input required placeholder="Idade" type="number">
-      <h5>Nos diga quais você gosta:</h5>
+    </section>
+    <!-- Sessão fale conosco, incluindo formulário -->
+    <section id="fale-conosco-section">
+      <h2>Fale Conosco</h2>
+      <form id="fale-conosco" action="">
+        <input required placeholder="Nome" type="text" />
+        <input required placeholder="Número de Telefone" type="phone" />
+        <input required placeholder="Email" type="email" />
+        <input required placeholder="Idade" type="number" />
+        <h5>Nos diga quais você gosta:</h5>
+        <div>
+          <label for="jogos">Jogos</label>
+          <input name="jogos" type="checkbox" />
+          <label for="jogos">Desenhos</label>
+          <input name="desenhos" type="checkbox" />
+          <label for="jogos">Filmes</label>
+          <input name="filmes" type="checkbox" />
+        </div>
+        <h5>Como prefere o nosso primeiro contato?</h5>
+        <div>
+          <label>Email</label>
+          <input name="preference" type="radio" />
+          <label>Telefone</label>
+          <input name="preference" type="radio" />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
       <div>
-        <label for="jogos">Jogos</label>
-      <input name="jogos" type="checkbox">
-      <label for="jogos">Desenhos</label>
-      <input name="desenhos"  type="checkbox">
-      <label for="jogos">Filmes</label>
-      <input name="filmes"  type="checkbox">
+        <span> HTML + CSS + Javascript</span>
       </div>
-      <h5>Como prefere o nosso primeiro contato?</h5>
       <div>
-      <label>Email</label>
-      <input name="preference"  type="radio">
-      <label>Telefone</label>
-      <input name="preference"  type="radio">
+        <span>Feito por <a target="_blank" href="https://github.com/Eduardo-Amaral"><strong>Eduardo Amaral</strong> <img src="../assets/images/github.svg" alt=""></a></span>
       </div>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-  <footer>
-    <div>
-      <img src="../assets/images/htmlIcon.svg" alt="">
-      <img src="../assets/images/cssIcon.svg" alt="">
-      <img src="../assets/images/javascriptIcon.svg" alt="">
-    </div>
-    <div>
-      <span>Feito por <a target="_blank" href="https://github.com/Eduardo-Amaral"><strong style="color:white">Eduardo Amaral</strong> <img src="../assets/images/github.svg" alt=""></a></span>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <!-- importa os scripts -->
+    <script src="../javascript/global.js" ></script>
+    <script src="../javascript/sobre-nos.js" ></script>
+  </body>
 </html>

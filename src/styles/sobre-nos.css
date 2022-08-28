@@ -13,6 +13,7 @@
    width:300px;
 }
 #resumo-section pre{
+  color:var(--cor-preto);
     font-size: 20px;
     text-align: center;
 }
