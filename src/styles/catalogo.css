@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:50px;
+    gap:100px;
 }
 
 #catalogo-section #grid{
@@ -14,3 +14,10 @@
    margin:auto;
    gap: 40px;
 }
+
+#catalogo-section #grid-especial{
+    display:grid;
+    grid-template-columns: 360px 360px;
+    margin:auto;
+    gap: 40px;
+ }

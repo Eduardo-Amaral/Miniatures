@@ -1,1 +1,69 @@
 @import url(global.css);
+
+/* Estilizando a sessão de resumo da página sobre-nos */
+#resumo-section{
+    padding-top: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+}
+#resumo-section img{
+   width:300px;
+}
+#resumo-section pre{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* Estilizando a sessão Fale Conosco da página sobre-nos */
+
+#fale-conosco-section {
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#fale-conosco-section * {
+  color: var(--cor-primaria);
+  font-weight: 600;
+  font-family: var(--fonte-primaria);
+}
+
+#fale-conosco-section form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  gap: 15px;
+}
+
+#fale-conosco-section input{
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--cor-branco);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+  border: none;
+  color:var(--cor-preto);
+}
+
+#fale-conosco-section button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--cor-branco);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+  border: none;
+}
+#fale-conosco-section label {
+   color:var(--cor-preto);
+  }
+#fale-conosco-section h5 {
+    font-size: 20px;
+   
+  }
