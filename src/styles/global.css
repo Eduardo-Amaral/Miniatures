@@ -90,3 +90,42 @@ h2 {
   color: var(--cor-primaria);
   font-size: 40px;
 }
+
+/* Estiliza os cartões de produtos, utilizados na home e no catálogo */
+.product-card {
+  background-color: white;
+  border: 3px solid var(--cor-primaria);
+  border-radius: 50px;
+  padding: 25px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-card h3 {
+  font-family: var(--fonte-primaria);
+  font-size: 25px;
+}
+.product-card img {
+  width: 250px;
+}
+
+/* Estilização do rodapé do sie (exibido em todas as páginas) */
+footer {
+  margin-top: 100px;
+  height: 100px;
+  width: 100vw;
+  background-color: rgb(83, 83, 83);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+footer span {
+  font-family: var(--fonte-primaria);
+  font-size: 20px;
+}

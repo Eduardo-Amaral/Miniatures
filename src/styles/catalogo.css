@@ -1,1 +1,16 @@
 @import url(global.css);
+
+#catalogo-section{
+    padding-top:150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px;
+}
+
+#catalogo-section #grid{
+   display:grid;
+   grid-template-columns: 360px 360px 360px 360px;
+   margin:auto;
+   gap: 40px;
+}
