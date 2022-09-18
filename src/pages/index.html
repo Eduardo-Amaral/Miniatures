@@ -8,7 +8,15 @@
 
     <title>Miniatures</title>
   </head>
-  <body>
+  <body onload="showWelcome()">   <!-- Body com evento 2-->
+    <!-- Popup de boas vindas -->
+    <article id="welcome">
+      <h1>Bem vindo!</h1>
+    </article>
+    <!-- Div fixa de produtos especiais -->
+    <div id="promotion">
+      <a href="/src/pages/catalogo.html">Veja nossas action figures especiais!</a>
+    </div>
     <!-- Cabeçalho de navegação -->
     <header id="header-container">
       <div>
@@ -43,6 +51,7 @@
     </main>
     <!-- Segunda sessão da home -->
     <section id="benefits">
+     
       <div class="circle-div-left">
         <h2>Vantagens:</h2>
         <ul>
@@ -55,7 +64,7 @@
     </section>
     <!-- Terceira sessão da home -->
     <section id="video-container">
-      <div class="circle-div-left">
+      <div>
         <h2>Para você, apaixonado por action figures</h2>
         <video controls src="../assets/videos/videosBonecos.mp4"></video>
       </div>
@@ -69,7 +78,6 @@
       </div>
     </footer>
     <!-- importa os scripts -->
-    <script src="../javascript/global.js" ></script>
-    <script src="../javascript/index.js" ></script>
+    <script src="../javascript/eventos.js" ></script>
   </body>
 </html>

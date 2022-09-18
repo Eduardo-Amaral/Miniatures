@@ -27,6 +27,36 @@ body {
   background-color: var(--cor-branco);
 }
 
+/* Configura o popup de boas vindas + animações */
+@keyframes welcome {
+  0% {
+    inset: -50vh 50vw;
+  }
+  100% {
+    inset: 50vh 50vw;
+  }
+}
+#welcome {
+  /* visibility: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: var(--cor-primaria);
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  inset: 50vh 50vw;
+  border-radius: 100%;
+  animation-name: welcome;
+  animation-duration: 1s;
+}
+#welcome h1 {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco);
+  text-align: center;
+}
+
 /* Define o estilo do cabeçalho, que aparecerá em todas as páginas */
 #header-container {
   height: 90px;
@@ -116,7 +146,6 @@ h2 {
   color: black !important;
 }
 
-
 /* Construção e estilização do botão de modo escuro */
 .switcher {
   position: absolute;
@@ -194,8 +223,9 @@ footer {
   flex-direction: row;
   gap: 50px;
 }
-footer div *{
+footer div * {
   font-family: var(--fonte-primaria);
   color: var(--cor-preto);
   font-size: 20px;
 }
+

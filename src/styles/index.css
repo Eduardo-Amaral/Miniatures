@@ -1,82 +1,170 @@
 @import url(global.css);
 
 /* Primeira sessão da HOME */
-main {
-  padding-top: 100px;
-  background-image: url(../assets/images/homeWallpaper.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 800px;
+@media (min-width: 1200px){
+  main {
+    padding-top: 100px;
+    background-image: url(../assets/images/homeWallpaper.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 800px;
+  }
+  
+  .circle-div-right {
+    z-index: 1000;
+    background-color: var(--cor-branco);
+    height: 800px;
+    width: 750px;
+    border-radius: 1000px 0px 0px 1000px;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Segunda sessão da HOME */
+  #promotion {
+    padding: 10px;
+    z-index: 10000;
+    position: fixed;
+    left: 0;
+    top: 40vh;
+    padding:15px 15px 15px 15px;
+    background-color: var(--cor-primaria);
+    display:none;
+  }
+  #promotion a {
+    text-align: center;
+    color: var(--cor-branco);
+  }
+  
+  #benefits {
+    z-index: 10000;
+    box-shadow: 0px -75px 25px black;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(../assets/images/batmanWallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 900px;
+  }
+  #benefits div {
+    background-color: var(--cor-branco);
+    height: 800px;
+    width: 750px;
+    border-radius: 0px 1000px 1000px 0px;
+    position: absolute;
+    left: 0;
+    top: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #benefits h2 {
+    font-size: 70px;
+  }
+  #benefits ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #benefits ul li {
+    color: var(--cor-preto);
+    font-size: 25px;
+  }
+  /* Terceira sessão da HOME */
+  #video-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #video-container video {
+    width: 900px;
+  }
+  
+  #video-container h2 {
+    font-size: 40px;
+  }
 }
 
-.circle-div-right {
-  background-color: var(--cor-branco);
-  height: 800px;
-  width: 750px;
-  border-radius: 1000px 0px 0px 1000px;
-  position: absolute;
-  right: 0;
-  top: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
+
+/* RESPONSIVO PARA TELAS ATÉ 380PX DE LARGURA */
+
+@media (max-width:380px){
+  main {
+    padding-top: 300px;
+    background-image: url(../assets/images/homeWallpaper.webp);
+    background-position: 0 70px;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+  }
+  
+  .circle-div-right {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  
+  /* Segunda sessão da HOME */
+  #promotion {
+
+  }
+  #promotion a {
+ 
+  }
+  
+  #benefits {
+ 
+  }
+  #benefits div {
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+  }
+  
+  #benefits h2 {
+ 
+  }
+  #benefits ul {
+   
+  }
+  #benefits ul li {
+   font-size: 14px; 
+  }
+  /* Terceira sessão da HOME */
+  #video-container div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+  }
+  #video-container video {
+    max-width:100vw;
+  }
+  
+  #video-container h2 {
+    font-size: 20px;
+    max-width: 80%;
+    text-align: center;
+  }
 }
 
 
-/* Segunda sessão da HOME */
-#benefits {
-  z-index: 10000;
-  box-shadow: 0px -75px 25px black;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  background-image: url(../assets/images/batmanWallpaper.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 900px;
-}
-#benefits div {
-  background-color: var(--cor-branco);
-  height: 800px;
-  width: 750px;
-  border-radius: 0px 1000px 1000px 0px;
-  position: absolute;
-  left: 0;
-  top: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-}
 
-#benefits h2 {
-  font-size: 70px;
-}
-#benefits ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-}
-#benefits ul li {
-  color: var(--cor-preto);
-  font-size: 25px;
-}
-/* Terceira sessão da HOME */
-#video-container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-}
-#video-container video {
- width: 900px;
-}
-
-#video-container h2 {
-  font-size: 40px;
-}

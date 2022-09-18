@@ -31,17 +31,19 @@
       <img src="../assets/images/logo.png" alt="logo miniatures" />
       <pre>
       Miniatures é uma empresa fictícia do ramo "comércio eletrônico de action figures".
-      Feito por Eduardo Amaral, esse projeto tem cunho acadêmico e possui sua estrutura de acordo com os <a style="color:var(--cor-primaria)" href="../../Requisitos.pdf">requisítos</a> impostos pelo professor.
+      Feito por Eduardo Amaral, esse projeto tem cunho acadêmico e possui sua estrutura de acordo com os <strong id="requirements-text" style="color:var(--cor-primaria)" href="../../Requisitos.pdf">requisítos</strong> impostos pelo professor.
     </pre>
+    <img id="requirements-img" src="../assets/images/requisitos.png" alt="requisitos">
     </section>
     <!-- Sessão fale conosco, incluindo formulário -->
     <section id="fale-conosco-section">
       <h2>Fale Conosco</h2>
-      <form id="fale-conosco" action="">
+      <form onsubmit="showMessage()" id="fale-conosco" action="">
         <input required placeholder="Nome" type="text" />
         <input required placeholder="Número de Telefone" type="phone" />
         <input required placeholder="Email" type="email" />
         <input required placeholder="Idade" type="number" />
+        <input style="height:100px" type="textarea" placeholder="Mensagem opcional">
         <h5>Nos diga quais você gosta:</h5>
         <div>
           <label for="jogos">Jogos</label>
@@ -69,8 +71,7 @@
         <span>Feito por <a target="_blank" href="https://github.com/Eduardo-Amaral"><strong>Eduardo Amaral</strong> <img src="../assets/images/github.svg" alt=""></a></span>
       </div>
     </footer>
-    <!-- importa os scripts -->
-    <script src="../javascript/global.js" ></script>
-    <script src="../javascript/sobre-nos.js" ></script>
+   <!-- importa os scripts -->
+   <script src="../javascript/eventos.js" ></script>
   </body>
 </html>

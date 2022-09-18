@@ -18,6 +18,15 @@
     text-align: center;
 }
 
+#requirements-text:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+#requirements-img{
+  display:none;
+  height:400px;
+  width:600px !important;
+}
 
 
 /* Estilizando a sessão Fale Conosco da página sobre-nos */
