@@ -102,6 +102,7 @@
 /* RESPONSIVO PARA TELAS ATÉ 380PX DE LARGURA */
 
 @media (max-width:380px){
+  
   main {
     padding-top: 300px;
     background-image: url(../assets/images/homeWallpaper.webp);
@@ -121,11 +122,8 @@
   
   
   /* Segunda sessão da HOME */
-  #promotion {
-
-  }
-  #promotion a {
- 
+  #promotion{
+    display:none;
   }
   
   #benefits {
